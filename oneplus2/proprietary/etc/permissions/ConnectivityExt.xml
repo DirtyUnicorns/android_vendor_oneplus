@@ -8,3 +8,4 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
     <library name="ConnectivityExt"
         file="/system/framework/ConnectivityExt.jar"/>
 </permissions>
+

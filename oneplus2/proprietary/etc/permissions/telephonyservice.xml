@@ -9,3 +9,4 @@ Qualcomm Technologies Proprietary and Confidential.
 <library name="com.qualcomm.qti.QtiTelephonyServicelibrary"
          file="/system/framework/QtiTelephonyServicelibrary.jar"/>
 </permissions>
+
