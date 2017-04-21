@@ -241,6 +241,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
+    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libfrsdk.so:system/vendor/lib64/libfrsdk.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
