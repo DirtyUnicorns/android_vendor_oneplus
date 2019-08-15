@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-# Copyright (c) 2018 Qualcomm Technologies, Inc.
+# Copyright (c) 2018-2019 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
