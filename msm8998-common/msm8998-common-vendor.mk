@@ -178,14 +178,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
-    vendor/oneplus/msm8998-common/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
-    vendor/oneplus/msm8998-common/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
@@ -1228,6 +1226,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/lib,system/lib)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/lib64,system/lib64)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/bin,system/bin)
 
 PRODUCT_PACKAGES += \
     com.qualcomm.qti.ant@1.0 \
